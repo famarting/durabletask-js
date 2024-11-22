@@ -68,7 +68,7 @@ jobs:
       - name: Build package
         run: npm run build-ci
 
-      - name: Publish to npm (@dapr/dapr)
+      - name: Publish to npm (@dapr/durabletask-js)
         run: npm publish build/ --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
